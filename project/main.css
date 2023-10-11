@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+      background-image: url(/project/images/covid.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      z-index: -1;
+
+}
+nav{     
+    
+    height: 7vmin;
+    width: 100%;
+    /* background-color: black; */
+
+}
+.right_panel{
+    float: right;
+    
+}
+.left_panel{
+    float: left;
+
+}
+.right_panel ul li a{
+   color:black;
+   font-size: 19px;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 14px;
+
+
+  
+}
+.right_panel ul{
+    display: flex;
+     align-items: center;
+   justify-content: center;  
+   padding: 16px;
+    
+}
+.right_panel ul li{
+    margin:0px 20px 0px 10px;
+    list-style: none;
+
+}
+
+.left_panel ul li a{
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px;
+   
+ }
+ .left_panel ul{
+     display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    list-style: none;
+ }
+ 
+a:hover{
+    background-color: blue;
+    color: orange;
+ }
+ 
