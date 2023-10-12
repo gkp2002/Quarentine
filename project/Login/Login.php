@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="Login.css">
  </head>
 <body>
-    <nav><?php
+  <?php
+  $server ='localhost';
+  $username = 'root';
+  $password = '1234';
+  $Db = 'covid';
+  $conn = new mysqli($server,$username,$password,$Db);
+  $sql = "SELECT * FROM signup";
+   $result = $conn->query($sql);
+  ?>
+    <nav>
+      <?php
       echo "<h3> Login Time: ".date("y-M-d" )."</h3>";
     ?>
     </nav>

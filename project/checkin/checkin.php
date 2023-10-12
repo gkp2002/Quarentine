@@ -43,17 +43,17 @@
         <td>IdNumber</td>
         <td><input required type="text" name="idnumber" maxlength="20" ></td>
          <td>Phone</td>
-        <td><input required type="tel" name="Phone" maxlength="10"></td>
+        <td><input required type="tel" name="phone" maxlength="10"></td>
        </tr>
        <tr>
         <td>Admitdate</td>
         <td><input required type="date" name="admit" ></td>
-           <td>Outdate</td>
-        <td><input required type="date" name="out" ></td>
+           <td>Exitdate</td>
+        <td><input required type="date" name="exit" ></td>
        </tr>
        <tr>
         <td>Address</td>
-        <td colspan="4"><textarea name="" id="" cols="70" rows="3"></textarea required></td>
+        <td colspan="4"><textarea name="address" id="" cols="70" rows="3"></textarea required></td>
        </tr>
     </table>
     <button type="Submit">Submit</button>

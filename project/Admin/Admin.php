@@ -17,9 +17,9 @@
        <div class="left-pannel" >
           <ul>
             <li><a href="/project/Admin/Admin.php" >DashBoard</a></li>
-            <li><a href="#" onclick="add()">CheckIn</a></li>
-            <li><a href="#" onclick="hello()">CheckOut</a></li>
-            <li><a href="#">TotalPatient</a></li>
+            <li><a href="/project/checkin/checkin.php">CheckIn</a></li>
+            <li><a href="#">CheckOut</a></li>
+            <li><a href="/project/TotalPatient/Total.php">TotalPatient</a></li>
              </ul>
        </div>
         <div class="right-pannel" >
