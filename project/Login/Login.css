@@ -1,0 +1,88 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.right_Panel{
+      float: right;
+      display: flex;
+      background-image: url("/project/images/cov.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      height: 100vmin;
+      width: 50%;
+      z-index: -1;
+}
+
+.container{
+    height: 400px;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+}
+.container input{
+
+    padding:10px;
+    margin: 10px;
+    font-weight: 100;
+    font-size: medium;
+    border: none;
+   
+
+ 
+  
+  
+}
+.container label{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container form button{
+    padding:14px 30px 14px 30px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: azure;
+    background-color: black;
+    margin: 20px 10px 0px 30px;
+   
+   }
+   form h1{  
+    color: rgba(255,241,103,0.9);
+   }
+
+   .left_panel{ 
+    width: 50%;
+    height: 100vmin;
+    background-image: url("/project/images/patent.png");
+
+   }
+ .Home{
+    float: left;
+ }   
+ .Home a{
+    text-decoration: none;
+    color:#fff;
+    margin-left: 20px;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+ }
+ .Home a:hover
+ {
+  color: aqua;
+  background-color: blanchedalmond;
+  
+ }
+ nav{
+    background-image: linear-gradient(to right,rgba(14, 202, 177, 0.533),blue);
+   
+ }
+ h3{
+    text-align: center;
+    color: #971;
+ }
