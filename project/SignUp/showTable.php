@@ -50,7 +50,7 @@
        $result = $conn->query($sql);
       
        if($result->num_rows>0){
-             echo "<table><th> Sr </th><th> FirstName </th><th> LastName </th><th> Gender </th><th> FatherName </th><th> MotherName </th><th> DoB </th><th> UserName </th></tr>";
+             echo "<table><th> Sr </th><th> FirstName </th><th> LastName </th><th> Gender </th><th> FatherName </th><th> MotherName </th><th> DoB </th><th> UserName </th><th>Password</th><th>Delete</th></tr>";
           while($row = $result->fetch_assoc()) {
                   echo "<tr> <td> ".$row["Sr"]." </td>".                  
                   "<td> ".$row["FirstName"]." </td>".
@@ -59,7 +59,8 @@
                   "<td> ".$row["FatherName"]." </td>".
                   "<td> ".$row["MotherName"]." </td>".
                   "<td> ".$row["DoB"]." </td>".
-                  "<td> ".$row["username"]." </td>";
+                  "<td> ".$row["username"]." </td>".
+                  "<td> ".$row["password"]." </td>";
                   ?>
                   <td> <a href="delete.php?id=<?php echo $row['Sr'];?>" onclick="return confirm('Are You Sure')">Delete    
                   </a> </td>  

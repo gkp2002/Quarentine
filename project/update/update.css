@@ -7,7 +7,6 @@ table tr td input,textarea{
 table{
     display: flex;
     justify-content: center;
-    
 }
 table tr th{
    font-size: 40px;
@@ -15,7 +14,7 @@ table tr th{
 table tr td{
     font-weight: bold;
     font-size: larger;
-   
+ 
 }
 form button{
     padding:20px 40px 20px  40px; 

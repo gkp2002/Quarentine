@@ -25,7 +25,7 @@
                           <th>AdmitDate</th>
                           <th>ExitDate</th>
                           <th>Address</th>
-                          <th>Delete</th>
+                          <th colspan="2">Operation</th>
                     </tr>
                     <tr>
                 <?php
@@ -44,6 +44,8 @@
                      <td><?php echo $row['Exitdate']?></td>
                      <td><?php echo $row['Address']?></td>
                      <td> <a href="dataDelete.php?id=<?php echo $row['Sr'];?>" onclick="return confirm('Are You Sure')">Delete    
+                  </a> </td> 
+                  <td> <a href="/project/update/update.php?id=<?php echo $row['Sr'];?>" onclick="return confirm('Are You Sure')">update   
                   </a> </td>  
                     </tr>
                     <?php
