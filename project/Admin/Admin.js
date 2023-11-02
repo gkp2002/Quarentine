@@ -23,3 +23,5 @@
 //     document.getElementById("main").innerText=this.open("/project/signup/signup.php")
 // }
 
+let Totalcase= document.getElementById('total')
+

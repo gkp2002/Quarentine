@@ -11,23 +11,20 @@
      <table >
        
      <tr ><th colspan="4">Patient Information</th></tr>
-        <tr align="center">
-              <td >Image</td>
-            <td id="box" colspan=""><input type="file" name="file" accept="image" required></td>
-        </tr>
+      
        <tr>
         <td>FirstName</td>
-        <td><input required type="text" name="fname" ></td>
+        <td><input required type="text" name="fname" pattern="[A-Za-Z]"></td>
       
         <td>LastName</td>
-        <td><input required type="text" name="lname" ></td>
+        <td><input required type="text" name="lname"pattern="[A-Za-Z]"></td>
        </tr>
        <tr>
         <td>FatherName</td>
-        <td><input required type="text" name="father" ></td>
+        <td><input required type="text" name="father" pattern="[A-Za-Z]" ></td>
       
         <td>MotherName</td>
-        <td><input required type="text" name="mother" ></td>
+        <td><input required type="text" name="mother"pattern="[A-Za-Z]" ></td>
        </tr>
 
        <tr>
@@ -40,10 +37,10 @@
         <td><input required type="date" name="Dob" ></td>
        </tr>
        <tr>
-        <td>IdNumber</td>
-        <td><input required type="text" name="idnumber" maxlength="20" ></td>
+        <td>IdProof</td>
+        <td><input required type="text" name="idnumber" maxlength="20" pattern="[0-9]{12,14}"></td>
          <td>Phone</td>
-        <td><input required type="tel" name="phone" maxlength="10"></td>
+        <td><input required type="tel" name="phone" maxlength="10" pattern="[0-9]{10,14}"></td>
        </tr>
        <tr>
         <td>Admitdate</td>

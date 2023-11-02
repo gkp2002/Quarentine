@@ -1,4 +1,3 @@
-
 <?php
    $server = 'localhost';
    $username = 'root';
@@ -19,16 +18,24 @@
        $Admitdate = $_POST['admit'];
        $Exitdate = $_POST['exit'];
        $Address = $_POST['address'];
-       $sql ="insert into patient (FirstName,LastName,FatherName,MotherName,Gender,DoB,Idnumber,Phone,Admit,Exitdate,Address)
-        values('$FirstName','$LastName','$FatherName','$MotherName','$Gender','$DoB','$IdNumber','$Phone','$Admitdate','$Exitdate','$Address')";
+       if(is_numeric($_GET['id'])){    
+        $sql ="UPDATE  patient SET FirstName='$FirstName' WHERE Sr= '".$_GET['id']."'";    
+        $result = mysqli_query($conn,$sql);    
+       }
+    }
+        ?>
+        
+<!--     
+    // (FirstName,LastName,FatherName,MotherName,Gender,DoB,Idnumber,Phone,Admit,Exitdate,Address)
+    //     values('$FirstName','$LastName','$FatherName','$MotherName','$Gender','$DoB','$IdNumber','$Phone','$Admitdate','$Exitdate','$Address')";
       if($conn->query($sql) == true){
-        echo "<script> alert('data Submit Sucessfull');window.location.href='./checkin.php'</script>";
+        echo "<script> alert('data Submit Sucessfull')</script>";
        
       }else{
-        echo "Data Not add sucessfull";
+        echo "Data add sucessfull";
       }
 
-   }
+   } -->
 
 
 ?>

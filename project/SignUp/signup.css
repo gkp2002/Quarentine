@@ -1,6 +1,6 @@
 body{
     background-color: rgb(79, 211, 231);
-    background-image: url("/project/images/patent.png");
+    background-image: url("/project/images/signupbg.avif");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -22,7 +22,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#168;
+    color:black;
 }
 .form_signup input{
     margin: 10px;

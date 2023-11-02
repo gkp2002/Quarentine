@@ -13,7 +13,6 @@
             <li><a href="MainPage.php" target="_self">Home</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Cases</a></li>
             <li><a href="#">Contact us</a></li>
         </ul>
         </div>

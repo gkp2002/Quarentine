@@ -10,9 +10,10 @@
 
 <?php
 include '../DbConnection.php';
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
+  $_SESSION['uid']=$username;
     $password = $_POST['password'];
 
     $sql = "SELECT * FROM signup WHERE username = '$username' and password = '$password'";
@@ -31,14 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <?php
       echo "<h3> Login Time: ".date("y-M-d" )."</h3>";
     ?>
-    </nav>
-    
-     <div class="right_Panel">    
-     
-       <div class="login_Page">
+    </nav>    
+    <div class="Home">
+            <h2><a href="/project/MainPage.php">Home</a></h2>   
+
+    </div>
+    <div class="login-Page">
+           <div class="Image">
+              <img src="/project/images/bg2.png" alt="">
+           </div>
             <div class="container">
                 <form method="post">
-                    <h1>Quarantine login page</h1>
+               <h1>Quarantine login page</h1>
               <label >UserName<input name="username" type="text" placeholder="Username" required></label>
               <br>
               <label for="">Password <input name="password" type="password" placeholder="password" required></label><br>             
@@ -48,13 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
             </div> 
           </div>
-    </div>
-    <div class="left_panel">
-    <div class="Home">
-            <h2><a href="/project/MainPage.php">Home</a></h2>
-        </div>
-
-    </div>
+   
+   
+    
 </body>
 </html>
 

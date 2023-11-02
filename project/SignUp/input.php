@@ -47,8 +47,8 @@ $server = 'localhost';
    try{
    if($password == $confirm){
   if($conn->query($sql)===true){ 
-    echo"  <script> alert('Data saved successfully')
-    </script>"."<button type='submit'><a href='signup.php'>signup page</a></button>";
+    echo"  <script> alert('Data saved successfully');window.location.href='../MainPage.php'
+    </script>";
     
   }else{      
     echo "Error Data Not saved ";
@@ -58,7 +58,7 @@ $server = 'localhost';
 }
    }
    catch(Exception $e){
-   echo "<script> alert('Enter Unique user Id')</script>"."<button type='submit'><a href='signup.php'>signup page</a></button>";
+   echo "<script> alert('Enter Unique user Id');window.location.href='./signup.php'</script>";
    }
    
 

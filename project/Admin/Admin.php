@@ -8,22 +8,40 @@
     <script src="Admin.js"></script>
 </head>
 <body>
-    <header>    
+  <?php
+    session_start();
+    include '../DbConnection.php';
+    $sql= "SELECT * FROM patient";
+   if( $result=$conn->query($sql)){
+    $total = $result->num_rows;
+   };
+  
+    
+  ?>
+    <header>   
+      
       <marquee behavior="alternate" direction="">
       <h1>Quarantine management System </h1>
-      </marquee>
+      </marquee>  
+    
       </header>
+      <div class="Admin-page">
+        <h1>Welcome     </h1>
+      </div>
     <main>
        <div class="left-pannel" >
           <ul>
             <li><a href="/project/Admin/Admin.php" >DashBoard</a></li>
-            <li><a href="/project/checkin/checkin.php">CheckIn</a></li>
-            <li><a href="#">CheckOut</a></li>
+            <li><a href="/project/checkin/checkin.php">AddPatient</a></li>
+            <li><a href="/project/SignUp/showTable.php">TotalAdmin</a></li>
             <li><a href="/project/TotalPatient/Total.php">TotalPatient</a></li>
+            <li> <a href="/project/MainPage.php">LogOut</a></li>
              </ul>
        </div>
         <div class="right-pannel" >
+
       <div id='main'>
+        <div class="container">
         <div  id="panel"></div>
          <div class="flex-box1">
           <div class="box">
@@ -46,26 +64,31 @@
 
            </div>
           <div class="box">
+            <div class="Total-cases">
+             <h1>Total Cases</h1>
+              <h3> <?php echo $total?></h3>
           
+            </div>
           </div>
+          
+          <!-- </div>
           <div class="box">
-
+            
           </div>
           <div class="box">
 
            </div>
          </div>
-         <div class="flex-box2">
-          
+         <div class="flex-box2">         
         
 
-         </div>
+         </div> -->
         </div>
        </div>
 
     </main>
-    <footer>
+    <!-- <footer>
 
-    </footer>
+    </footer> -->
 </body>
 </html>

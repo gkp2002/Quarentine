@@ -1,4 +1,3 @@
-
 <?php
    $server = 'localhost';
    $username = 'root';
@@ -8,21 +7,18 @@
    if($conn->connect_error) {
           die("Error connecting to");
      }else{
+        $Serial = $_POST['Serial'];
        $FirstName = $_POST['fname'];
        $LastName = $_POST['lname'];
        $FatherName = $_POST['father'];
        $MotherName = $_POST['mother'];
-       $Gender = $_POST['gender'];
-       $DoB = $_POST['Dob'];
+        $DoB = $_POST['Dob'];
        $IdNumber = $_POST['idnumber'];
-       $Phone = $_POST['phone'];
-       $Admitdate = $_POST['admit'];
-       $Exitdate = $_POST['exit'];
+       $Phone = $_POST['phone'];  
        $Address = $_POST['address'];
-       $sql ="insert into patient (FirstName,LastName,FatherName,MotherName,Gender,DoB,Idnumber,Phone,Admit,Exitdate,Address)
-        values('$FirstName','$LastName','$FatherName','$MotherName','$Gender','$DoB','$IdNumber','$Phone','$Admitdate','$Exitdate','$Address')";
+       $sql ="UPDATE patient SET FirstName='$FirstName',LastName='$LastName',FatherName='$FatherName',MotherName='$MotherName',DoB='$DoB',IdNumber='$IdNumber',Phone='$Phone',Address='$Address' WHERE Sr=$Serial";
       if($conn->query($sql) == true){
-        echo "<script> alert('data Submit Sucessfull');window.location.href='./checkin.php'</script>";
+        echo "<script> alert('data Submit Sucessfull');window.location.href='./update.php'</script>";
        
       }else{
         echo "Data Not add sucessfull";

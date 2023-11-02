@@ -3,42 +3,53 @@
     padding: 0px;
     margin: 0px;
 }
-.right_Panel{
-      float: right;
-      display: flex;
-      background-image: url("/project/images/cov.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      justify-content: center;
-      align-items: center;
-      height: 100vmin;
-      width: 50%;
-      z-index: -1;
-}
 
+body{
+ background-image: url("../images/bg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.login-Page{
+    margin-top: 12%;
+    margin-left: 15%;
+    height: 50vh;
+    width: 70%;   
+     background-color: white;
+    color: black;
+   
+}
 .container{
-    height: 400px;
-    width: 100%;   
-    display: flex;
-    justify-content: center;
-}
-.container input{
+    border-radius: 3rem;
 
+    display: flex;
+    height: 100%;
+    width: 50%;
+    float: right;
+    background-color:whitesmoke;
+    color: white;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    
+}
+
+.container input{
     padding:10px;
     margin: 10px;
     font-weight: 100;
     font-size: medium;
-    border: none;
-   
-
- 
+    background-color:rgb(251, 251, 251);
+    color:black;
+    border:none ; 
   
   
 }
 .container label{
     font-weight: bold;
     font-size: 20px;
-    color: #fff;
+  color: black;
 }
 
 .container form button{
@@ -52,30 +63,29 @@
    
    }
    form h1{  
-    color: rgba(255,241,103,0.9);
+    color: black;
+   }
+   .container h1{
+    margin-left:3rem ;
+    margin-bottom: 1.7rem;
    }
 
-   .left_panel{ 
-    width: 50%;
-    height: 100vmin;
-    background-image: url("/project/images/patent.png");
-
-   }
+  
  .Home{
     float: left;
  }   
  .Home a{
+    width: 10px;
     text-decoration: none;
-    color:#fff;
+    color:black;
     margin-left: 20px;
     display: flex;
-    padding: 20px;
     text-align: center;
  }
  .Home a:hover
  {
-  color: aqua;
-  background-color: blanchedalmond;
+  color: red;
+  
   
  }
  nav{
@@ -84,5 +94,13 @@
  }
  h3{
     text-align: center;
-    color: #971;
+    color: black;
+ }
+ .Image img{
+
+    height:386px ;
+    width: 50%;
+     background-size: cover;
+    float: left;
+  
  }

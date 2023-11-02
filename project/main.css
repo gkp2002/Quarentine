@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-      background-image: url(/project/images/covid.jpg);
+      background-image: url(./images/homebg.jpg);
       background-repeat: no-repeat;
       background-size:cover;
       z-index: -1;
